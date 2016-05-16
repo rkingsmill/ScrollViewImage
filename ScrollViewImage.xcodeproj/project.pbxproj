@@ -13,6 +13,7 @@
 		5BE454F41CEA285000226289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE454F21CEA285000226289 /* Main.storyboard */; };
 		5BE454F61CEA285000226289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE454F51CEA285000226289 /* Assets.xcassets */; };
 		5BE454F91CEA285000226289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE454F71CEA285000226289 /* LaunchScreen.storyboard */; };
+		5BE455011CEA2AEA00226289 /* ScrollView-Images-master in Resources */ = {isa = PBXBuildFile; fileRef = 5BE455001CEA2AEA00226289 /* ScrollView-Images-master */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5BE454F51CEA285000226289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE454F81CEA285000226289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE454FA1CEA285000226289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE455001CEA2AEA00226289 /* ScrollView-Images-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ScrollView-Images-master"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5BE454EF1CEA285000226289 /* ViewController.h */,
 				5BE454F01CEA285000226289 /* ViewController.m */,
 				5BE454F21CEA285000226289 /* Main.storyboard */,
+				5BE455001CEA2AEA00226289 /* ScrollView-Images-master */,
 				5BE454F51CEA285000226289 /* Assets.xcassets */,
 				5BE454F71CEA285000226289 /* LaunchScreen.storyboard */,
 				5BE454FA1CEA285000226289 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				5BE454F91CEA285000226289 /* LaunchScreen.storyboard in Resources */,
 				5BE454F61CEA285000226289 /* Assets.xcassets in Resources */,
+				5BE455011CEA2AEA00226289 /* ScrollView-Images-master in Resources */,
 				5BE454F41CEA285000226289 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
