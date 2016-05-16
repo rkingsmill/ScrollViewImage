@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ViewControllerDetails.h"
 
 @interface ViewController () <UIScrollViewDelegate>
 
@@ -26,6 +27,10 @@
    self.scrollView.delegate = self;
     
 
+    UITapGestureRecognizer *tapToZoom = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zoom:)];
+    tapToZoom.numberOfTapsRequired = 1;
+    tapToZoom.numberOfTouchesRequired = 1;
+    [self.scrollView addGestureRecognizer:tapToZoom];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -34,5 +39,37 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)zoom:(UITapGestureRecognizer*)tap {
+  
+    CGPoint location = [tap locationInView:[tap.view superview]];
+    
+    if (location.x < self.scrollView.bounds.size.width) {
+        
+    [self performSegueWithIdentifier:@"zoomImage" sender:self.imageView1];
+        
+    }
+    
+    else if (location.x > self.scrollView.bounds.size.width && location.x < (2 * self.scrollView.bounds.size.width) ) {
+        
+       [self performSegueWithIdentifier:@"zoomImage" sender:self.imageView2];
+    }
+    
+    else {
+        
+        [self performSegueWithIdentifier:@"zoomImage" sender:self.imageView3];
+    }
+    
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(UIImageView*)sender
+{
+        if ([segue.identifier isEqualToString:@"zoomImage"]) {
+            
+            ViewControllerDetails *viewControllerDetails = segue.destinationViewController;
+            
+            viewControllerDetails.image = sender.image;
+            
+        }}
 
 @end

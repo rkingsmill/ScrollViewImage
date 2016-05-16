@@ -9,10 +9,12 @@
 #import "ViewControllerDetails.h"
 
 
+
 @interface ViewControllerDetails () <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollViewDetails;
-@property (weak, nonatomic) IBOutlet UIScrollView *imageViewDetails;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewDetails;
 
 @end
 
@@ -23,7 +25,10 @@
     
     self.scrollViewDetails.delegate = self;
     self.scrollViewDetails.minimumZoomScale = 0.5;
-    self.scrollViewDetails.maximumZoomScale = 2;
+    self.scrollViewDetails.maximumZoomScale = 4;
+    
+  
+
     
     // Do any additional setup after loading the view.
 }
@@ -34,29 +39,14 @@
 }
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    
-    if (scrollView) {
-        
-    
-        
-        
-    }
-    
-    return nil;
+
+    self.imageViewDetails.image = self.image;
+   
+    //return thing want to zoom
+    return self.imageViewDetails;
 }
 
-//- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-//    // this delegate method expect you to return a view that the scroll view will use to zoom
-//    if (self.demoNumber == 1) {
-//        UIImageView *cookieMonster = [scrollView viewWithTag:100];
-//        return cookieMonster;
-//    } else if (self.demoNumber == 2) {
-//        UIView *colorView = [scrollView viewWithTag:100];
-//        return colorView;
-//    }
-//    
-//    return nil;
-//}
+
 
 
 /*

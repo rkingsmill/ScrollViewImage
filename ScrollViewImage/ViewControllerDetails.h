@@ -10,4 +10,6 @@
 
 @interface ViewControllerDetails : UIViewController
 
+@property UIImage *image;
+
 @end
