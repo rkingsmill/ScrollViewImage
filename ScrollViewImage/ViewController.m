@@ -24,7 +24,8 @@
     
     
    self.scrollView.delegate = self;
-    self.scrollView.translatesAutoresizingMaskIntoConstraints = YES;
+    
+
     
     // Do any additional setup after loading the view, typically from a nib.
 }

@@ -13,7 +13,10 @@
 		5BE454F41CEA285000226289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE454F21CEA285000226289 /* Main.storyboard */; };
 		5BE454F61CEA285000226289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE454F51CEA285000226289 /* Assets.xcassets */; };
 		5BE454F91CEA285000226289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE454F71CEA285000226289 /* LaunchScreen.storyboard */; };
-		5BE455011CEA2AEA00226289 /* ScrollView-Images-master in Resources */ = {isa = PBXBuildFile; fileRef = 5BE455001CEA2AEA00226289 /* ScrollView-Images-master */; };
+		5BE4550B1CEA3CAF00226289 /* Lighthouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4550A1CEA3CAF00226289 /* Lighthouse.jpg */; };
+		5BE4550D1CEA3CBD00226289 /* Lighthouse-night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4550C1CEA3CBD00226289 /* Lighthouse-night.jpg */; };
+		5BE4550F1CEA3CC800226289 /* Lighthouse-in-Field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BE4550E1CEA3CC800226289 /* Lighthouse-in-Field.jpg */; };
+		5BE455121CEA410000226289 /* ViewControllerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE455111CEA410000226289 /* ViewControllerDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +30,11 @@
 		5BE454F51CEA285000226289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE454F81CEA285000226289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE454FA1CEA285000226289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BE455001CEA2AEA00226289 /* ScrollView-Images-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ScrollView-Images-master"; sourceTree = "<group>"; };
+		5BE4550A1CEA3CAF00226289 /* Lighthouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lighthouse.jpg; sourceTree = "<group>"; };
+		5BE4550C1CEA3CBD00226289 /* Lighthouse-night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-night.jpg"; sourceTree = "<group>"; };
+		5BE4550E1CEA3CC800226289 /* Lighthouse-in-Field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-in-Field.jpg"; sourceTree = "<group>"; };
+		5BE455101CEA410000226289 /* ViewControllerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDetails.h; sourceTree = "<group>"; };
+		5BE455111CEA410000226289 /* ViewControllerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +72,11 @@
 				5BE454EF1CEA285000226289 /* ViewController.h */,
 				5BE454F01CEA285000226289 /* ViewController.m */,
 				5BE454F21CEA285000226289 /* Main.storyboard */,
-				5BE455001CEA2AEA00226289 /* ScrollView-Images-master */,
+				5BE455101CEA410000226289 /* ViewControllerDetails.h */,
+				5BE455111CEA410000226289 /* ViewControllerDetails.m */,
+				5BE4550E1CEA3CC800226289 /* Lighthouse-in-Field.jpg */,
+				5BE4550C1CEA3CBD00226289 /* Lighthouse-night.jpg */,
+				5BE4550A1CEA3CAF00226289 /* Lighthouse.jpg */,
 				5BE454F51CEA285000226289 /* Assets.xcassets */,
 				5BE454F71CEA285000226289 /* LaunchScreen.storyboard */,
 				5BE454FA1CEA285000226289 /* Info.plist */,
@@ -139,10 +150,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE4550B1CEA3CAF00226289 /* Lighthouse.jpg in Resources */,
 				5BE454F91CEA285000226289 /* LaunchScreen.storyboard in Resources */,
 				5BE454F61CEA285000226289 /* Assets.xcassets in Resources */,
-				5BE455011CEA2AEA00226289 /* ScrollView-Images-master in Resources */,
 				5BE454F41CEA285000226289 /* Main.storyboard in Resources */,
+				5BE4550F1CEA3CC800226289 /* Lighthouse-in-Field.jpg in Resources */,
+				5BE4550D1CEA3CBD00226289 /* Lighthouse-night.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +169,7 @@
 				5BE454F11CEA285000226289 /* ViewController.m in Sources */,
 				5BE454EE1CEA285000226289 /* AppDelegate.m in Sources */,
 				5BE454EB1CEA285000226289 /* main.m in Sources */,
+				5BE455121CEA410000226289 /* ViewControllerDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
