@@ -42,15 +42,15 @@
 
 -(void)zoom:(UITapGestureRecognizer*)tap {
   
-    CGPoint location = [tap locationInView:[tap.view superview]];
+    CGPoint location = [tap locationInView:self.scrollView];
     
-    if (location.x < self.scrollView.bounds.size.width) {
+    if (location.x < self.imageView1.bounds.size.width) {
         
     [self performSegueWithIdentifier:@"zoomImage" sender:self.imageView1];
         
     }
     
-    else if (location.x > self.scrollView.bounds.size.width && location.x < (2 * self.scrollView.bounds.size.width) ) {
+    else if ((location.x > self.imageView1.bounds.size.width) && (location.x < (self.imageView1.bounds.size.width + self.imageView2.bounds.size.width))) {
         
        [self performSegueWithIdentifier:@"zoomImage" sender:self.imageView2];
     }
