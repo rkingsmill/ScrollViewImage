@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView2;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView3;
 
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+
 @end
 
 @implementation ViewController
@@ -31,6 +33,8 @@
     tapToZoom.numberOfTapsRequired = 1;
     tapToZoom.numberOfTouchesRequired = 1;
     [self.scrollView addGestureRecognizer:tapToZoom];
+    
+    
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -71,5 +75,12 @@
             viewControllerDetails.image = sender.image;
             
         }}
+
+-(void) scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    CGFloat pageWidth = self.imageView1.bounds.size.width;
+    int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    self.pageControl.currentPage = page;
+}
 
 @end
